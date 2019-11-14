@@ -3,9 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Presentacion", "01 Presentacion", "{18A62F37-01F8-4654-AABD-CE2496761284}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Dominio", "02 Dominio", "{92506A3F-A6A3-4BF4-ABA2-FEACDA7F658E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Aplicacion", "03 Aplicacion", "{621D04F4-2BF3-4494-9732-A22040E5CCB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Persistencia", "04 Persistencia", "{52441D30-ED44-4322-A59E-70FD3638767B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KY.CasoNorthwind", "KY.CasoNorthwind\KY.CasoNorthwind.csproj", "{9FB6D93F-DDE9-49A4-AA93-29CD7A140674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KY.Dominio", "KY.Dominio\KY.Dominio.csproj", "{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KY.Aplicacion", "KY.Aplicacion\KY.Aplicacion.csproj", "{C07F0570-F783-4F6C-957A-85C6D401714E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KY.Persistencia", "KY.Persistencia\KY.Persistencia.csproj", "{570BCA84-C39C-43D5-A644-40D524825E50}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FB6D93F-DDE9-49A4-AA93-29CD7A140674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB6D93F-DDE9-49A4-AA93-29CD7A140674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB6D93F-DDE9-49A4-AA93-29CD7A140674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB6D93F-DDE9-49A4-AA93-29CD7A140674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07F0570-F783-4F6C-957A-85C6D401714E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07F0570-F783-4F6C-957A-85C6D401714E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07F0570-F783-4F6C-957A-85C6D401714E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07F0570-F783-4F6C-957A-85C6D401714E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570BCA84-C39C-43D5-A644-40D524825E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570BCA84-C39C-43D5-A644-40D524825E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570BCA84-C39C-43D5-A644-40D524825E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570BCA84-C39C-43D5-A644-40D524825E50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FB6D93F-DDE9-49A4-AA93-29CD7A140674} = {18A62F37-01F8-4654-AABD-CE2496761284}
+		{7BB0B6FB-BAED-491A-B8CF-1480FF8E4E24} = {92506A3F-A6A3-4BF4-ABA2-FEACDA7F658E}
+		{C07F0570-F783-4F6C-957A-85C6D401714E} = {621D04F4-2BF3-4494-9732-A22040E5CCB9}
+		{570BCA84-C39C-43D5-A644-40D524825E50} = {52441D30-ED44-4322-A59E-70FD3638767B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF78AE0A-03C5-4150-BEDB-1A3D4EF92F86}

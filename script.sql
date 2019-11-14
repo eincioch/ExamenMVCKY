@@ -2,7 +2,7 @@ select * from Customers
 select * from Orders 
 go
 --alter table Orders add ConfirmationDate datetime NULL
---alter table Orders add Comments text NULL
+--alter table Orders add COMMENTS text NULL
 go
 
 select * from [Order Details] 
