@@ -1,0 +1,153 @@
+﻿@model IEnumerable<KY.Dominio.Entity.Orders>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pedido</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="col-sm-8">
+        <div class="col-sm-6">
+
+            <div class="input-group">
+                Nro. Pedido
+            </div>
+            <div class="input-group">
+                Cliente
+            </div>
+            <div class="input-group">
+                ID Empleado
+            </div>
+            <div class="input-group">
+                Dirección
+            </div>
+            <div class="input-group">
+                Fecha envió
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="input-group">
+                @Html.DisplayFor(model => model.FirstOrDefault().OrderID)
+            </div>
+            <div class="input-group">
+                @Html.DisplayFor(model => model.FirstOrDefault().CustomerID) @Html.DisplayFor(model => model.FirstOrDefault().Customers.CompanyName)
+            </div>
+            <div class="input-group">
+                @Html.DisplayFor(model => model.FirstOrDefault().EmployeeID)
+            </div>
+            <div class="input-group">
+                @Html.DisplayFor(model => model.FirstOrDefault().ShipAddress)
+            </div>
+            <div class="input-group">
+                @Html.DisplayFor(model => model.FirstOrDefault().ShippedDate)
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Detalle</h2>
+
+    <table class="table">
+        <tr>
+            <th align="center">
+                ID Producto
+                @*@Html.DisplayNameFor(model => model.OrderID)*@
+            </th>
+            <th>
+                Producto
+                @*@Html.DisplayNameFor(model => model.CustomerID)*@
+            </th>
+            <th>
+                Unidad Medida
+                @*@Html.DisplayNameFor(model => model.EmployeeID)*@
+            </th>
+            <th>
+                Cantidad
+                @*@Html.DisplayNameFor(model => model.OrderDate)*@
+            </th>
+            <th>
+                Precio
+                @*@Html.DisplayNameFor(model => model.RequiredDate)*@
+            </th>
+            <th>
+                Descuento
+                @*@Html.DisplayNameFor(model => model.RequiredDate)*@
+            </th>
+            <th>
+                Sub Total
+                @*@Html.DisplayNameFor(model => model.ShippedDate)*@
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            foreach (var detalle in item.Order_Details)
+            {
+                <tr>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => detalle.ProductID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => detalle.Products.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => detalle.Products.QuantityPerUnit)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => detalle.Quantity)
+                    </td>
+                    <td align="right">
+                        @Html.DisplayFor(modelItem => detalle.UnitPrice)
+                    </td>
+                    <td align="right">
+                        @Html.DisplayFor(modelItem => detalle.Discount)
+                    </td>
+                    <td align="right">
+                        @detalle.CalcSubTotal()
+                    </td>
+
+                    @*<td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>*@
+                </tr>
+            }
+
+        }
+
+    </table>
+
+    <div class="input-group">
+        <div class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></div>
+        @Html.TextAreaFor(model => model.FirstOrDefault().COMMENTS, new { placeholder = "Comentarios", @class = "form-control input-lg" })
+    </div>
+
+    <br>
+
+    <div class="form-group">
+            <input type="submit" value="Confirmar" class="btn btn-primary" />
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>
