@@ -39,10 +39,12 @@ Antes de ejecutar el proyecto realizar esta tarea.
 <table class="egt">
   <tr>
     <td>Backup Northwind</td>
+    <td>ZIP Proyecto Publicado copiar IIS</td>
     <td>Se agregó</td>
   </tr>
   <tr>
     <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Northwind.bak">Download</a></td>
+    <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Publicado.zip">Publish</a></td>
     <td>alter table Orders add ConfirmationDate datetime NULL</td></tr>
     <tr><td>alter table Orders add COMMENTS text NULL</td>
   </tr>
