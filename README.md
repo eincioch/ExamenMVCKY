@@ -1,5 +1,5 @@
 # ExamenMVCKY
-Demo para Instituciones Educativas
+se publica solución del Examen (Caso Northwind)
 
 # Desarrollado por
 
