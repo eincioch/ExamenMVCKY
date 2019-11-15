@@ -9,7 +9,8 @@ namespace KY.Persistencia.Interface
 {
     public interface IRepositorio
     {
-        Orders GetOrders(int OrderID);
+        IEnumerable<Orders> GetOrders(int OrderID);
         IEnumerable<PendingOrder> GetPendingOrders();
+        int UpdOrder(Orders orders);
     }
 }

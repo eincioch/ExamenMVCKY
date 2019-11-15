@@ -13,8 +13,16 @@ namespace KY.Dominio.Entity
         public decimal UnitPrice { get; set; }
         public short Quantity { get; set; }
         public float Discount { get; set; }
-
         public virtual Orders Orders { get; set; }
         public virtual Products Products { get; set; }
+
+        public Order_Details()
+        {
+            
+        }
+
+        public decimal CalcSubTotal() {
+            return (Convert.ToDecimal(this.Quantity) * this.UnitPrice) - Convert.ToDecimal(this.Discount);
+        }
     }
 }

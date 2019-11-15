@@ -9,6 +9,9 @@ namespace KY.Aplicacion.Interface
 {
     public interface IOrderServices
     {
+        IEnumerable<Orders> GetOrders(int OrderID);
         IEnumerable<PendingOrder> GetPendingOrders();
+
+        int UpdOrder(Orders orders);
     }
 }
