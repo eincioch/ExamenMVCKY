@@ -27,8 +27,8 @@ se publica solución del Examen (Caso Northwind)
     <td>Patrón</td>
   </tr>
   <tr>
-    <td>MS Visual Studio</td>
-    <td>MS SQL Server</td></td>
+    <td>MS Visual Studio 16.3.9</td>
+    <td>MS SQL Server 2019 (150)</td></td>
     <td>MVC</td></td>
   </tr>
 </table>
@@ -42,7 +42,7 @@ Antes de ejecutar el proyecto realizar esta tarea.
     <td>Ejecutar lineas</td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs/">Download</a></td>
+    <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Northwind.bak">Download</a></td>
     <td>alter table Orders add ConfirmationDate datetime NULL</td></tr>
     <tr><td>alter table Orders add COMMENTS text NULL</td>
   </tr>
