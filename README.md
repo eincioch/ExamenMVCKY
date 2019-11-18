@@ -28,7 +28,7 @@ se publica solución del Examen (Caso Northwind)
   </tr>
   <tr>
     <td>MS Visual Studio 16.3.9</td>
-    <td>MS SQL Server 2019 (150)</td></td>
+    <td>MS SQL Server 2014 (120)</td></td>
     <td>MVC</td></td>
   </tr>
 </table>
@@ -38,12 +38,12 @@ Antes de ejecutar el proyecto realizar esta tarea.
 
 <table class="egt">
   <tr>
-    <td>Backup Northwind</td>
+    <td>Backup Northwind SQL2014</td>
     <td>ZIP Proyecto Publicado copiar IIS</td>
     <td>Se agregó</td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Northwind.bak">Download</a></td>
+    <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Northwind2014.bak">Download</a></td>
     <td rowspan="2"><a href="https://github.com/eincioch/ExamenMVCKY/blob/master/Publicado.zip">Publish</a></td>
     <td>alter table Orders add ConfirmationDate datetime NULL</td></tr>
     <tr><td>alter table Orders add COMMENTS text NULL</td>
