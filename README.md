@@ -50,6 +50,16 @@ Antes de ejecutar el proyecto realizar esta tarea.
   </tr>
 </table>
 
+# Arquitectura del proyecto
+<table class="egt">
+  <tr>
+    <td>Arquitectura</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/eincioch/ExamenMVCKY/blob/master/img/arquitectura.png" width="700" height="450"></td>
+  </tr>
+</table>
+
 # Interfaz de usuario
 
 # Lista pedidos
@@ -59,7 +69,7 @@ Antes de ejecutar el proyecto realizar esta tarea.
     <td>Interfaz</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/eincioch/ExamenMVCKY/blob/master/img/listado.png" width="700" height="250"></td>
+    <td><img src="https://github.com/eincioch/ExamenMVCKY/blob/master/img/listado.png" width="600" height="350"></td>
   </tr>
 </table>
 
